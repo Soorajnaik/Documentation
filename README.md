@@ -147,12 +147,16 @@ For setting various type of alerts we can refer the below link
 
 > https://awesome-prometheus-alerts.grep.to/rules.html
 
+![alt text](https://github.com/Soorajnaik/Documentation/blob/d89103866fd7b6f25d334562a0171eb0b9637ee4/Untitled%20Diagram.drawio.png?raw=)
 
 #### Phase 6 
 
-After monitoring we want logging tool to be installed in an EKS cluster such as EFK or ELK so that we can get logs in a centralised point for that we use three tools Elasticsearch, Fluentd/Fluentbit, and Kibana (EFK) stack. We’ll set up Fluentd/Fluentbit as a DaemonSet so it runs on every Kubernetes worker node and fluentd/Fluentbit will collect all the logs and deliver it to the Elasticsearch cluster, where it will be indexed and stored and Kibana is a data visualization frontend which allows us to explore your Elasticsearch log data through a web interface, and build dashboards and queries to quickly answer questions and gain insight into our application.
+After monitoring we want logging tool to be installed in an EKS cluster such as EFK or ELK so that we can get logs in a centralised point for acheiving this we can use these three tools Elasticsearch, Fluentd/Fluentbit, and Kibana (EFK) stack. We’ll set up Fluentd/Fluentbit as a DaemonSet so it runs on every Kubernetes worker node and fluentd/Fluentbit will collect all the logs and deliver it to the Elasticsearch cluster, where it will be indexed and stored and Kibana is a data visualization frontend which allows us to explore your Elasticsearch log data through a web interface, and build dashboards and queries to quickly answer questions and gain insight into our application.
 For installation we can refer this documentation
 
 > https://www.digitalocean.com/community/tutorials/how-to-set-up-an-elasticsearch-fluentd-and-kibana-efk-logging-stack-on-kubernetes
 
+
+
+![alt text](https://github.com/Soorajnaik/Documentation/blob/47107c3fc20022da42db3f7ab72df868ef914267/EFK.drawio.png?raw=)
 
