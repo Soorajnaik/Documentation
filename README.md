@@ -97,7 +97,7 @@ and type AWS configure there and will give all the credential details and exit t
 
 ### Phase-3 --- [In this phase will create dockerfile, helmchart and push those to github ]
 
-Now we created the dockerfile for the given code after creation of the dockerfile manually we build  image and run the image in a docker container to see if it is working properly. When the image works properly we push that dockerfile to github Production repository. So now in production repository application code and dockerfile will be present.
+In this phase we will create the dockerfile for the given code after creation of the dockerfile manually we will build image and run the image in a docker container to see if it is working properly. When the image works properly we push that dockerfile to github Production repository. So now in production repository application code and dockerfile will be present.
 Now will create Helm chart directory in the name of nodejs-project and create three different value files for 3 different enviornment dev,qa,prod such that DEV value files should create 1 pod in the dev enviornment, QA value file should create 1 pod in qa enviornment and PROD value file should create 2 pods in prod enviornmnet. Then push this helm folder and value files to Devops repository. For Installing helm and using helm we can refer following  documents
 > https://helm.sh/docs/intro/install/
 > https://helm.sh/docs/intro/using_helm/
