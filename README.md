@@ -43,7 +43,10 @@ Amazon Elastic Container Service for Kubernetes (EKS) is a cloud-based container
 Prometheus is a monitoring solution for storing time series data like metrics. Grafana allows to visualize the data stored in Prometheus (and other sources).
 
 ### Logging Tools 
-EFK stands for Elasticsearch, Fluentbit, and Kibana. EFK is a popular and the best open-source choice for the Kubernetes log aggregation and analysis. Elasticsearch is a distributed and scalable search engine commonly used to swift through large volumes of log data.
+EFK stands for Elasticsearch, Fluentbit, and Kibana. EFK is a popular and the best open-source choice for the Kubernetes log aggregation and analysis. 
+- Elasticsearch is a distributed and scalable search engine commonly used to swift through large volumes of log data.
+- Fluent Bit is an open source log shipper and processor, that collects data from multiple sources and forwards it to different destinations.
+- Kibana is a browser-based visualization, exploration, and analysis platform
 
 Elasticsearch, Logstash, and Kibana when used together, form an end-to-end stack (ELK Stack) and real-time data analytics tool that provides actionable insights from almost any type of structured and unstructured data source.
 
