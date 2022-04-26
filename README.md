@@ -126,7 +126,7 @@ For `dev` enviornment will cerate a shell script named build_push.sh and the tas
 
 - Post -- On failure it should send a slack message to our slack channel saying that the job has failed
 
-For `qa` enviornment there would be one stage in stages and one post.Will create an shell script for this stage the task of this script is to pull the image using the commit-id tag that image with qa-latest tag, push the image to the ecr and after that deploy the pod using helm with image tag of commit-id in qa namespace using values-qa.yaml values file the shell file name is qa_tag.sh
+For `qa` enviornment there would be one stage in stages and one post.Will create an shell script for this stage the task of this script is to pull the image using the commit-id tag with dev-latest tag, tag that image with qa-latest tag, push the image to the ecr and after that deploy the pod using helm with image tag of commit-id in qa namespace using values-qa.yaml values file the shell file name is qa_tag.sh
 
 - stage-1 -- will go into this path `warnerdevops/Devops/Sooraj/` and run the shell script named qa_tag.sh 
 
